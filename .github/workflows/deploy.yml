@@ -17,4 +17,4 @@ jobs:
       - run: chmod 600 "$HOME/.ssh/key"
 
       # Deploy
-      - run: cd dist && rsync -e "ssh -p 65002 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . u666032506@145.14.151.22:/home/u666032506/domains/creativecom.org/public_html/alus
+      - run: cd && rsync -e "ssh -p 65002 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . u666032506@145.14.151.22:/home/u666032506/domains/creativecom.org/public_html/alus
